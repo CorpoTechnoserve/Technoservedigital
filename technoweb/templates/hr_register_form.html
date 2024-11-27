@@ -1,0 +1,243 @@
+ {% extends 'index.html' %}
+
+{% load static%}
+
+{% block content%}
+<!-- Contact Us -->
+<div id="contact">
+    <section class="contact-us section-space">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-7 col-12">
+                    <!-- Contact Form -->
+                    <div class="contact-form-area m-top-30">
+                        <p style="color: green;">
+                            {% if success_msg %}
+                                {{ success_msg }}
+                            {% endif %}
+                        </p>
+                        <h4>HR Corner</h4>
+                        <form class="form" method="POST" action="{%url 'hr_corner' %}">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <div class="icon"><i class="fa fa-email"></i></div>
+                                        <input type="text" name="hr_email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <div class="icon"><i class="fa fa-building-o"></i></div>
+                                        <input type="text" name="hr_company_name" placeholder="Company Name">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <div class="icon"><i class="fa fa-user"></i></div>
+                                        <input type="text" name="hr_contact_person" placeholder="Contact Person">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <div class="icon"><i class="fa fa-id-badge"></i></div>
+                                        <input type="text" name="hr_designation" placeholder="Designation">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group textarea">
+                                        <div class="icon"><i class="fa fa-mobile"></i></div>
+                                        <input type="text" name="hr_contact" placeholder="Contact Number" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group textarea">
+                                        <div class="icon"><i class="fa fa-globe"></i></div>
+                                        <input type="text" name="hr_website" placeholder="Website" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group textarea">
+                                        <div class="icon"><i class="fa fa-address-book"></i></div>
+                                        <input type="text" name="hr_company_registered_address" placeholder="Company Registered Address" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group textarea">
+                                        <div class="icon"><i class="fa fa-address-card"></i></div>
+                                        <input type="text" name="hr_total_requirements" placeholder="Total Requirements" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group textarea">
+                                        <div class="icon"><i class="fa fa-graduation-cap"></i></div>
+                                        <input type="text" name="hr_qualification_required" placeholder="Qualifications Required" >
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        <select class="custom_field" name="job_experience">
+                                            <option>Job Experience Required</option>
+                                            <option value="Experienced">Experienced</option>
+                                            <option value="Fresher">Fresher</option>
+                                            
+                                          </select>
+                                        <!-- <div class="icon"><i class="fa fa-location-arrow"></i></div>
+                                        <input type="text" name="register_current_location" placeholder="Current Location"> -->
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group">
+                                        
+                                        <select class="custom_field" name="communication_skill">
+                                            <option>Communication Skills Required</option>
+                                            <option value="Excellent">Excellent</option>
+                                            <option value="Good">Good</option>
+                                            <option value="Average">Average</option>
+                                        </select>
+                                   
+                                        <!-- <input type="date" name="register_gender" placeholder="Gender"> -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        <div class="icon"><i class="fa fa-credit-card"></i></div>
+                                        <input type="text" name="hr_annual_salary" placeholder="Average Annual Salary CTC" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <select class="custom_field" name="cab_facility">
+                                            <option>Cab Facility</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        
+                                        <select class="custom_field" name="incentive_plans">
+                                            <option>Incentive Plans</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                       
+                                        <select class="custom_field" name="interview_process">
+                                            <option>Written Technical /Communication test</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                       
+                                        <select class="custom_field" name="group_discussion">
+                                            <option>Group Discussion</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        
+                                        <select class="custom_field" name="hr_round">
+                                            <option>HR Round</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        
+                                        <select class="custom_field" name="technical_round">
+                                            <option>Technical Round/Operation’s round</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            
+                                        </select>
+                                       
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <!-- <div class="icon"><i class="fa fa-book"></i></div> -->
+                                        <select class="custom_field" name="work_environment" >
+                                            <option>Work Environment</option>
+                                            <option value="24*7">24*7</option>
+                                            <option value="Day Shift">Day Shift</option>
+                                            <option value="Sat-Sun Fixed Weekly-offs">Sat-Sun Fixed Weekly-offs</option>
+                                            <option value="Rotational Offs">Rotational Offs</option>
+                                        </select>
+                                        <!-- <input type="text" name="register_address" placeholder="Interested Programming Language" > -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <!-- <div class="icon"><i class="fa fa-check"></i></div> -->
+                                        <select class="custom_field" name="project">
+                                            <option>Project/Process</option>
+                                            
+                                            <option value="Voice">Voice</option>
+                                            <option value="Non-Voice">Non-Voice</option>
+                                            <option value="Technical">Technical</option>
+                                            <option value="Non-Technical">Non-Technical</option>
+                                        </select>
+                                        <!-- <input type="text" name="register_address" placeholder="Fee Plan" > -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        <div class="icon"><i class="fa fa-address-book"></i></div>
+                                        <input type="text" name="hr_hiring_position" placeholder="Hiring for the position" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group ">
+                                        <div class="icon"><i class="fa fa-ddress-card"></i></div>
+                                        <input type="text" name="hr_major_responsibity" placeholder="Major Responsibilities" >
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group button">
+                                        <button type="submit" class="bizwheel-btn theme-2">Send Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--/ End contact Form -->
+                </div>
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>	
+</div>
+    <!--/ End Contact Us -->
+
+{% endblock%}

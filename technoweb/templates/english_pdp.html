@@ -1,0 +1,75 @@
+{% extends 'index.html' %}
+
+{% load static%}
+
+{% block content%}
+
+<!-- Services -->
+<section class="services section-bg section-space">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title style2 text-center">
+                    <div class="section-top">
+                        <h1><span>Services</span><b>Personality Development & English Speaking</b></h1><h4>Improve you communication with personality with us</h4>
+                    </div>
+                    <div class="section-bottom">
+                        <div class="text-style-two">
+                            <p>Improve your Skills with us “CLICK THE BELOW LINKS“</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-12">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <div class="service-head">
+                        <img style="height:250px;" src="{% static 'technoweb/img/technoserve_personality_development.jpg'%}" alt="#">
+                        <div class="icon-bg"><i class="fa fa-handshake-o"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-business.html">Personality Development Programme</a></h4>
+                        <p>.Our Trainers will help you to improve your personality so that you can represent your high qualities in front of anyone.</p>
+                        <a class="btn" href="service-business.html"><i class="fa fa-arrow-circle-o-right"></i>Click Here to Register</a>
+                    </div>
+                </div>
+                <!--/ End Single Service -->
+            </div>
+            <!-- <div class="col-lg-4 col-md-4 col-12"> -->
+                <!-- Single Service -->
+                <!-- <div class="single-service">
+                    <div class="service-head">
+                        <img src="{% static 'technoweb/img/college.jpg'%}" alt="#">
+                        <div class="icon-bg"><i class="fa fa-html5"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-develop.html">College/Institute Corner</a></h4>
+                        <p>Supporting College/Institute for Quality Placements at Global Level.</p>
+                        <!-- <a class="btn" href="service-develop.html"><i class="fa fa-arrow-circle-o-right"></i>View Service</a> -->
+                    <!-- </div> -->
+                <!-- </div>  -->
+                <!--/ End Single Service -->
+            <!-- </div> -->
+            <div class="col-lg-6 col-md-4 col-12">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <div class="service-head">
+                        <img style="height:250px;" src="{% static 'technoweb/img/technoserve_english_speaking.jpg'%}" alt="#">
+                        <div class="icon-bg"><i class="fa fa-cube"></i></div>
+                    </div>
+                    <div class="service-content">
+                        <h4><a href="service-market.html">English Speaking</a></h4>
+                        <p>Speaking English allows you to actually broaden your world, from job opportunities to the ability to relate to people from every country.</p>
+                        <a class="btn" href="service-market.html"><i class="fa fa-arrow-circle-o-right"></i>Click Here to Register</a>
+                    </div>
+                </div>
+                <!--/ End Single Service -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ End Services -->
+
+{% endblock %}

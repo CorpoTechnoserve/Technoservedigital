@@ -1,0 +1,381 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+	<!-- {% static 'technoweb/' %} -->
+	<head>
+		<!-- Meta Tag -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name='copyright' content='pavilan'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" description="Generating Workforce 4.0 Globally by our specialized practical trainings in Python, Java, Android & Digital Marketing
+		Best IT Solutions in Web Apps, Android Apps & Software development" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title Tag  -->
+		<title>TechnoServeDigital India</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/favicon.png" href="{% static 'technoweb/img/t_logo.jpg' %}">
+		
+		<!-- Web Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<!-- Bizwheel Plugins CSS -->
+		<link rel="stylesheet" href="{% static 'technoweb/css/animate.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/cubeportfolio.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/font-awesome.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/jquery.fancybox.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/magnific-popup.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/owl-carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/slicknav.min.css' %}">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Bizwheel Stylesheet -->  
+		<link rel="stylesheet" href="{% static 'technoweb/css/reset.css' %}">
+		<link rel="stylesheet" href="{% static 'technoweb/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'technoweb/css/responsive.css' %}">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		
+		
+		
+		<!-- Bizwheel Colors -->
+		<!--<link rel="stylesheet" href="css/skins/skin-1.css">
+		<!--<link rel="stylesheet" href="css/skins/skin-2.css">-->
+		<!--<link rel="stylesheet" href="css/skins/skin-3.css">-->
+		<!--<link rel="stylesheet" href="css/skins/skin-4.css">-->
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css">
+		.custom_field{
+    height: 50px;
+    border: 1px solid rgba(204, 204, 204, 0.58);
+    width: 100%;
+    display: block;
+    border-radius: 0px;
+    padding: 0px 40px 0 15px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-size: 14px;
+    font-weight:normal;
+	color:#757790;
+   
+}
+#btn_background{
+	background-color: #53abea;
+	padding:10px;
+	color: white;
+}
+
+#industry_img_height{
+	height:250px;
+}
+#portfolio_img_height{
+	height:150px;
+}
+
+		</style>
+		
+    </head>
+    <body id="bg">
+        <!-- Boxed Layout -->
+		<div id="page" class="site boxed-layout"> 
+		
+            <!-- Preloader -->
+            <div class="preeloader">
+                <div class="preloader-spinner"></div>
+            </div>
+            <!--/ End Preloader -->
+        
+            <!-- Header -->
+            <header class="header">
+                <!-- Topbar -->
+                <div class="topbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-12">
+                                <!-- Top Contact -->
+                                <div class="top-contact">
+                                    <div class="single-contact"><i class="fa fa-phone"></i>Phone: +91 9013800252</div> 
+                                    <div class="single-contact"><i class="fa fa-envelope-open"></i>Email: technoservedigital@gmail.com</div>	
+                                    <!-- <div class="single-contact"><i class="fa fa-clock-o"></i>Opening: 09AM - 09PM</div>  -->
+                                </div>
+                                <!-- End Top Contact -->
+                            </div>	
+                            <div class="col-lg-4 col-12">
+                                <div class="topbar-right">
+                                    <!-- Social Icons -->
+                                    <ul class="social-icons">
+                                        <li><a href="https://www.facebook.com/aryan.narula.7927"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.instagram.com/technoservedigital1/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/bhavuk-a-b59138185/"><i class="fa fa-linkedin"></i></a></li>
+                                        
+                                    </ul>															
+                                    <div class="button">
+                                        <a href="/#contact"  class="bizwheel-btn">Connect us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ End Topbar -->
+                <!-- Middle Header -->
+                <div class="middle-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="middle-inner">
+                                    <div class="row">
+                                        <div class="col-lg-2 col-md-3 col-12">
+                                            <!-- Logo -->
+                                            <div class="logo">
+                                                <!-- Image Logo -->
+                                                <div class="img-logo">
+                                                    <a href="{% url 'home'%}">
+                                                        <img style="height:60px;" src="{% static 'technoweb/img/t_logo.jpg'%}" alt="TechnoServeDigital India">
+                                                    </a>
+                                                </div>
+                                            </div>								
+                                            <div class="mobile-nav"></div>
+                                        </div>
+                                        <div class="col-lg-10 col-md-9 col-12">
+                                            <div class="menu-area">
+                                                <!-- Main Menu -->
+                                                <nav class="navbar navbar-expand-lg">
+                                                    <div class="navbar-collapse">	
+                                                        <div class="nav-inner">	
+                                                            <div class="menu-home-menu-container">
+                                                                <!-- Naviagiton -->
+                                                                <ul id="nav" class="nav main-menu menu navbar-nav">
+                                                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                                                    <li><a href="/#about">About Us</a></li>
+                                                                  
+                                                                    <li class="icon-active"><a href="#">Services</a>
+                                                                        <ul class="sub-menu">
+																			<li><a href="{% url 'education' %}">Education</a></li>
+																			<li><a href="{% url 'software_development' %}">Software Development</a></li>
+																			<li><a href="{% url 'services' %}">Placements</a></li>
+																			
+                                                                            <!-- <li><a href="{% url 'english_pdp' %}">Software Development</a></li> -->
+                                                                        </ul>
+                                                                    </li>
+                                                                    <!-- <li><a href="{% url 'student_corner' %}">Register</a></li> -->
+                                                                    <li><a href="/#contact">Contact Us</a></li>
+                                                                </ul>
+                                                                <!--/ End Naviagiton -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                                <!--/ End Main Menu -->	
+                                                <!-- Right Bar -->
+                                                <div class="right-bar">
+                                                    <!-- Search Bar -->
+                                                    <ul class="right-nav">
+                                                        <li class="top-search"><a href="#0"><i class="fa fa-search"></i></a></li>
+                                                        <!-- <li class="bar"><a class="fa fa-bars"></a></li> -->
+                                                    </ul>
+                                                    <!--/ End Search Bar -->
+                                                    <!-- Search Form -->
+                                                    <div class="search-top">
+                                                        <form action="#" class="search-form" method="get">
+                                                            <input type="text" name="s" value="" placeholder="Search here"/>
+                                                            <button type="submit" id="searchsubmit"><i class="fa fa-search"></i></button>
+                                                        </form>
+                                                    </div>
+                                                    <!--/ End Search Form -->
+                                                </div>	
+                                                <!--/ End Right Bar -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/ End Middle Header -->
+        {% block content %}
+
+    
+        {% endblock %}
+    </div>
+
+    </body>
+    
+    
+
+    		<!-- Footer -->
+		<footer class="footer" style="background-image:url('static/technoweb/img/map.png');  ">
+			<!-- Footer Top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Footer About -->		
+							<div class="single-widget footer-about widget">	
+								<div class="logo">
+									<div class="img-logo">
+										<a class="logo" href="home.html">
+											<img class="img-responsive" style ="height:60px;" src="{% static 'technoweb/img/t_logo.jpg'%}" alt="logo">
+										</a>
+									</div>
+								</div>
+								<div class="footer-widget-about-description">
+									<p>Promising Career for people who are Unemployable. We are a global placement firm that serves campus placement, recruitment services, bulk hiring, training and grooming workshops for fresher’s as well as experienced alumni.</p>
+								</div>	
+								<div class="social">
+									<!-- Social Icons -->
+									<ul class="social-icons">
+										<li><a href="https://www.facebook.com/aryan.narula.7927"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://www.instagram.com/technoservedigital1/"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/bhavuk-a-b59138185/"><i class="fa fa-linkedin"></i></a></li>
+                                        	</ul>
+								</div>
+								<div class="button"><a href="#" class="bizwheel-btn">About Us</a></div>
+							</div>		
+							<!--/ End Footer About -->		
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<!-- Footer Links -->		
+							<div class="single-widget f-link widget">
+								<h3 class="widget-title">Company</h3>
+								<ul>
+									<li><a href="/#about">About Us</a></li>
+									<li><a href="{% url 'education' %}">Education</a></li>
+									<li><a href="{% url 'services' %}">Placement</a></li>
+									<li><a href="/#contact">Contact Us</a></li>
+									<li><a href="{% url 'student_corner' %}">Student Corner</a></li>
+									<li><a href="{% url 'hr_corner' %}">HR Corner</a></li>
+									
+								</ul>
+							</div>			
+							<!--/ End Footer Links -->			
+						</div>
+						<!-- <div class="col-lg-4 col-md-6 col-12"> -->
+							<!-- Footer News -->
+							<!-- <div class="single-widget footer-news widget">	 -->
+								<!-- <h3 class="widget-title">Blog Page</h3> -->
+								<!-- Single News -->
+								<!-- <div class="single-f-news">
+									<div class="post-thumb"><a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a></div>
+									<div class="content">
+										<p class="post-meta"><time class="post-date"><i class="fa fa-clock-o"></i>April 15, 2020</time></p>
+										<h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
+									</div>
+								</div> -->
+								<!--/ End Single News -->
+								<!-- Single News -->
+								<!-- <div class="single-f-news">
+									<div class="post-thumb"><a href="#"><img src="https://via.placeholder.com/70x70" alt="#"></a></div>
+									<div class="content">
+										<p class="post-meta"><time class="post-date"><i class="fa fa-clock-o"></i>April 10, 2020</time></p>
+										<h4 class="title"><a href="blog-sngle.html">We Provide you Best &amp; Creative Consulting Service</a></h4>
+									</div>
+								</div> -->
+								<!--/ End Single News -->
+							<!-- </div>			 -->
+							<!--/ End Footer News -->			
+						<!-- </div> -->
+						<div class="col-lg-4 col-md-6 col-12">	
+							<!-- Footer Contact -->		
+							<div class="single-widget footer_contact widget">	
+								<h3 class="widget-title">Contact</h3>
+								<p>Let us connect for your bright future.</p>
+								<ul class="address-widget-list">
+									<li class="footer-mobile-number"><i class="fa fa-phone"></i>+91 9013800252</li>
+									<li class="footer-mobile-number"><i class="fa fa-envelope"></i>technoservedigital@gmail.com</li>
+									<!-- <li class="footer-mobile-number"><i class="fa fa-map-marker"></i>House Building Uttara</li> -->
+								</ul>
+							</div>		
+							<!--/ End Footer Contact -->						
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+							<!-- Footer Newsletter -->
+							<div class="footer-newsletter">
+								<form action="{% url 'ask_query'%}" method="post" class="newsletter-area">
+									{% csrf_token %}
+									<input type="email" name="footer_email" placeholder="Your email address">
+									<button type="submit">Submit</button>
+								</form>
+							</div>
+							<!--/ End Footer Newsletter -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Copyright -->
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="copyright-content">
+								<!-- Copyright Text -->
+								<p>© Copyright <a href="#">@2021</a>. Design &amp; Development By <a target="_blank" href="{% url 'home' %}">TechnoServe Digital</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Copyright -->
+		</footer>
+		
+		<!-- Jquery JS -->
+		<script src="{% static 'technoweb/js/jquery.min.js'%}"></script>
+		<script src="{% static 'technoweb/js/jquery-migrate-3.0.0.js' %}"></script>
+		<!-- Popper JS -->
+		<script src="{% static 'technoweb/js/popper.min.js' %}"></script>
+		<!-- Bootstrap JS -->
+		<script src="{% static 'technoweb/js/bootstrap.min.js' %}"></script>
+		<!-- Modernizr JS -->
+		<script src="{% static 'technoweb/js/modernizr.min.js' %}"></script>
+		<!-- ScrollUp JS -->
+		<script src="{% static 'technoweb/js/scrollup.js' %}"></script>
+		<!-- FacnyBox JS -->
+		<script src="{% static 'technoweb/js/jquery-fancybox.min.js' %}"></script>
+		<!-- Cube Portfolio JS -->
+		<script src="{% static 'technoweb/js/cubeportfolio.min.js' %}"></script>
+		<!-- Slick Nav JS -->
+		<script src="{% static 'technoweb/js/slicknav.min.js' %}"></script>
+		<!-- Slick Nav JS -->
+		<script src="{% static 'technoweb/js/slicknav.min.js' %}"></script>
+		<!-- Slick Slider JS -->
+		<script src="{% static 'technoweb/js/owl-carousel.min.js' %}"></script>
+		<!-- Easing JS -->
+		<script src="{% static 'technoweb/js/easing.js' %}"></script>
+		<!-- Magnipic Popup JS -->
+		<script src="{% static 'technoweb/js/magnific-popup.min.js' %}"></script>
+		<!-- Active JS -->
+        <script src="{% static 'technoweb/js/active.js' %}"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+		function changeStatus(){
+			var selected_value=document.getElementById('currently_working');
+			if(selected_value.value=="No"){
+				document.getElementById("organization").style.display="none";
+				document.getElementById("experience").style.display="none";
+				document.getElementById("designation").style.display="none";
+
+
+			}
+			else{
+				document.getElementById("organization").style.display = "inline-block";
+				document.getElementById("experience").style.display="inline-block";
+				document.getElementById("designation").style.display="inline-block";
+
+			}
+		}
+		</script>
+  <script>
+    AOS.init();
+  </script>
+	</body>
+</html>
